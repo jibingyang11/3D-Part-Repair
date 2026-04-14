@@ -1,0 +1,40 @@
+# Default configuration for 3D Part Repair
+paths:
+  partnet_root: "E:/datasets/partnet"          # PartNet data v0 root
+  project_root: "."                             # Project root
+  raw_data_dir: "data/raw"                      # Raw paired data
+  processed_data_dir: "data/processed"          # Processed data
+  splits_dir: "data/splits"                     # Train/val/test splits
+  output_dir: "outputs"                         # All outputs
+  figures_dir: "outputs/figures"
+  tables_dir: "outputs/tables"
+  metrics_dir: "outputs/metrics"
+  repaired_meshes_dir: "outputs/repaired_meshes"
+  logs_dir: "outputs/logs"
+
+dataset:
+  category: "Chair"
+  semantic_label: "leg"                         # Part to remove
+  total_samples: 100                            # Number of samples to use
+  random_seed: 42
+
+repair:
+  margin: 0.05                                  # Bounding box margin for repair zone
+  proximity_threshold: 0.1                      # Threshold for loop-to-bbox proximity
+  methods:
+    - "center_fan"
+    - "planar_removed_part_aware"
+    - "planar_largest_hole_only"
+
+evaluation:
+  metrics:
+    - "closure"
+    - "complexity"
+    - "quality"
+    - "locality"
+
+visualization:
+  dpi: 300
+  figsize: [12, 4]
+  font_size: 12
+  save_format: "pdf"

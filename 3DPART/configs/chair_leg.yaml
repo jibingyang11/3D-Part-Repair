@@ -1,0 +1,21 @@
+# Chair leg removal experiment configuration
+# Inherits from default.yaml and overrides specific settings
+
+dataset:
+  category: "Chair"
+  semantic_label: "leg"
+  total_samples: 100
+  random_seed: 42
+  # PartNet chair IDs are filtered automatically
+
+repair:
+  margin: 0.05
+  proximity_threshold: 0.1
+  methods:
+    - "center_fan"
+    - "planar_removed_part_aware"
+    - "planar_largest_hole_only"
+
+experiment:
+  name: "chair_leg_removal"
+  description: "Minimal-change local mesh repair after chair leg removal"
