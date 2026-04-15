@@ -1,0 +1,30 @@
+# Chair leg removal experiment configuration
+# Inherits from default.yaml and overrides specific settings
+
+dataset:
+  category: "Chair"
+  semantic_label: "leg"
+  total_samples: 100
+  random_seed: 42
+  # PartNet chair IDs are filtered automatically
+
+repair:
+  margin: 0.05
+  proximity_threshold: 0.1
+  methods:
+    - "center_fan"
+    - "planar_removed_part_aware"
+    - "mlp_patch_rpa"
+    - "planar_largest_hole_only"
+
+mlp_patch:
+  hidden_sizes: [64, 32, 16]
+  random_state: 42
+  model_path: "outputs/models/mlp_patch_generator_chair.pkl"
+
+experiment:
+  name: "chair_leg_removal"
+  description: "Minimal-change local mesh repair after chair leg removal"
+
+paths:
+  raw_data_dir: "D:/MyJupyter/Works/3DPART_v2/data/raw/chair_leg_removal"
