@@ -1,0 +1,18 @@
+2026-04-15 21:27:50 [INFO] BatchExperiment: Running on 100 samples (SOTA=True, distance=True, mlp=yes)
+2026-04-15 21:38:40 [WARNING] BatchExperiment: Sample 42758: No boundary loops found
+2026-04-15 21:49:11 [WARNING] BatchExperiment: Sample 2663: No boundary loops found
+2026-04-15 22:07:29 [WARNING] BatchExperiment: Sample 37684: No boundary loops found
+2026-04-15 22:15:01 [WARNING] BatchExperiment: Sample 37418: No boundary loops found
+2026-04-15 22:21:24 [WARNING] BatchExperiment: Sample 44083: No boundary loops found
+2026-04-15 22:27:38 [WARNING] BatchExperiment: Sample 3050: No boundary loops found
+2026-04-15 22:28:41 [WARNING] BatchExperiment: Sample 35131: No boundary loops found
+2026-04-15 22:38:03 [WARNING] BatchExperiment: Sample 44624: No boundary loops found
+2026-04-15 22:49:25 [WARNING] BatchExperiment: Sample 38076: No boundary loops found
+2026-04-15 22:49:25 [WARNING] BatchExperiment: Sample 42069: No boundary loops found
+2026-04-15 23:03:07 [WARNING] BatchExperiment: Sample 48469: No boundary loops found
+2026-04-15 23:04:36 [WARNING] BatchExperiment: Sample 42766: No boundary loops found
+2026-04-15 23:04:38 [WARNING] BatchExperiment: Sample 41137: No boundary loops found
+2026-04-15 23:07:42 [WARNING] BatchExperiment: Sample 41937: No boundary loops found
+2026-04-15 23:09:02 [WARNING] BatchExperiment: Sample 47922: No boundary loops found
+2026-04-15 23:17:31 [WARNING] BatchExperiment: Sample 3015: No boundary loops found
+2026-04-15 23:17:31 [INFO] BatchExperiment: Done: 84 success, 16 failed

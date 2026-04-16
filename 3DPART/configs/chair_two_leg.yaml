@@ -1,0 +1,25 @@
+# Chair two-leg removal pilot configuration
+
+dataset:
+  category: "Chair"
+  semantic_label: "leg"
+  total_samples: 30
+  random_seed: 42
+  num_parts_to_remove: 2
+  part_selection_mode: "random_distinct"
+
+repair:
+  margin: 0.05
+  proximity_threshold: 0.1
+  methods:
+      - "center_fan"
+      - "planar_removed_part_aware"
+      - "advancing_front_rpa"
+      - "planar_largest_hole_only"
+
+experiment:
+  name: "chair_two_leg_removal"
+  description: "Preliminary multi-part local repair after removing two chair legs"
+
+paths:
+  raw_data_dir: "D:/MyJupyter/Works/3DPART_v2/data/raw/chair_two_leg_removal"

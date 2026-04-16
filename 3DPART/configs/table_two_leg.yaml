@@ -1,0 +1,25 @@
+# Table two-leg removal pilot configuration
+
+dataset:
+  category: "Table"
+  semantic_label: "leg"
+  total_samples: 20
+  random_seed: 42
+  num_parts_to_remove: 2
+  part_selection_mode: "random_distinct"
+
+repair:
+  margin: 0.05
+  proximity_threshold: 0.1
+  methods:
+      - "center_fan"
+      - "planar_removed_part_aware"
+      - "advancing_front_rpa"
+      - "planar_largest_hole_only"
+
+experiment:
+  name: "table_two_leg_removal"
+  description: "Preliminary multi-part local repair after removing two table legs"
+
+paths:
+  raw_data_dir: "D:/MyJupyter/Works/3DPART_v2/data/raw/table_two_leg_removal"
